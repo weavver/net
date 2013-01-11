@@ -1,5 +1,6 @@
 bin
 obj
+build
 app.config
 *.suo
 *.snk
