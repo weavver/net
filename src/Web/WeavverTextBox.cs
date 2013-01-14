@@ -4,8 +4,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.ComponentModel;
 
-using Weavver.Data;
-
 namespace Weavver.Web
 {
 	public class WeavverTextBox : TextBox
