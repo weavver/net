@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <project name="Weavver Net" default="rebuild">
-    <property name="build.dir" value="build" />
+    <property name="build.dir" value="build" unless="${property::exists('build.dir')}" />
     <property name="debug" value="true"/>
 
     <target name="clean">
@@ -16,6 +16,7 @@
               <sources>
                    <include name="src/HTTP/*.cs" />
                    <include name="src/Sockets/*.cs" />
+                   <include name="src/Web/WeavverMenuItem.cs" />
 			    <!--<include name="src/**/*.cs" />-->
               </sources>
         </csc>
