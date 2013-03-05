@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Net</RootNamespace>
     <AssemblyName>Weavver.Net</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,10 +32,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\vendors\microsoft\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +60,43 @@
     <Compile Include="Sockets\Packet.cs" />
     <Compile Include="Sockets\SocketClient.cs" />
     <Compile Include="Sockets\SocketServer.cs" />
+    <Compile Include="Web\AutoCompleteTextBox.cs" />
+    <Compile Include="Web\Calendar\WeavverCalendar.cs" />
+    <Compile Include="Web\Calendar\WeavverCalendarEventArgs.cs" />
+    <Compile Include="Web\Comet\HttpStreamHandler.cs" />
+    <Compile Include="Web\Comet\HttpStreamThread.cs" />
+    <Compile Include="Web\Comet\HttpStreamThreadResult.cs" />
+    <Compile Include="Web\DropDownMenu\WeavverDropDownMenu.cs" />
+    <Compile Include="Web\DropDownMenu\WeavverDropDownMenuDesigner.cs" />
+    <Compile Include="Web\DropDownMenu\WeavverDropDownMenuItem.cs" />
+    <Compile Include="Web\DropDownMenu\WeavverDropDownMenuItemCollection.cs" />
+    <Compile Include="Web\DropDownMenu\WeavverDropDownMenuPopupType.cs" />
+    <Compile Include="Web\DropDownMenu\WeavverDropDownMenuScrollType.cs" />
+    <Compile Include="Web\DropDownMenu\WeavverDropDownMenuType.cs" />
+    <Compile Include="Web\GroupBox\WeavverGroupBox.cs" />
+    <Compile Include="Web\GroupBox\WeavverGroupBoxItem.cs" />
+    <Compile Include="Web\GroupBox\WeavverGroupBoxItemCollection.cs" />
+    <Compile Include="Web\ListBox\WeavverListBox.cs" />
+    <Compile Include="Web\ListBox\WeavverListBoxItem.cs" />
+    <Compile Include="Web\ListBox\WeavverListBoxItemCollection.cs" />
+    <Compile Include="Web\SkeletonPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\TabControl\WeavverDefaultTabControlTabTemplate.cs" />
+    <Compile Include="Web\TabControl\WeavverDesign.cs" />
+    <Compile Include="Web\TabControl\WeavverTabCollection.cs" />
+    <Compile Include="Web\TabControl\WeavverTabControl.cs" />
+    <Compile Include="Web\TabControl\WeavverTabControlBuilder.cs" />
+    <Compile Include="Web\TabControl\WeavverTabControlDesigner.cs" />
+    <Compile Include="Web\TabControl\WeavverTabControlTab.cs" />
+    <Compile Include="Web\TabControl\WeavverTabPanel.cs" />
+    <Compile Include="Web\WeavverDataGrid.cs" />
+    <Compile Include="Web\WeavverGroupPanel.cs" />
+    <Compile Include="Web\WeavverMenuItem.cs" />
+    <Compile Include="Web\WeavverTabControl.cs" />
+    <Compile Include="Web\WeavverTextBox.cs" />
+    <Compile Include="Web\WeavverWebControl.cs" />
+    <Compile Include="Web\WeavverYahooOnlineIndicator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
