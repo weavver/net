@@ -38,7 +38,8 @@
     <AssemblyOriginatorKeyFile>Weavver.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit">
+    <Reference Include="AjaxControlToolkit, Version=3.0.20820.16598, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\vendors\microsoft\AjaxControlToolkit.dll</HintPath>
     </Reference>
     <Reference Include="System" />
